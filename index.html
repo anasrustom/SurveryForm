@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pancake Factory Job Application</title>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+    <header>
+      <h1 id ='title'>Pancake Factory Job Application</h1>
+       <p id='description'>Thank you for applying to work at Pancake Factory</p>
+    </header>
+ 
+    <form action='https://register-demo.pancakefactory.org' id='survey-form'>
+    <fieldset>
+      <label id='name-label'>Name <input id='name' type='text' placeholder='Enter your name' required> </label>
+
+      <label id='email-label'>Email <input id='email' type='email' placeholder='Enter your Email' required> </label>
+
+      <label id='number-label'>Age <input id='number' type='number' placeholder='Enter age' min='16' max='60' class='age' required> </label>
+
+    </fieldset>
+    <fieldset>
+<legend> Please choose an employment type: </legend>
+<label><input type="radio" name="work-type" value='1' class='radio'/> Half-Time</label>
+
+        <label><input type="radio" name="work-type" value='2' class='radio'/> Full-Time</label>
+      </fieldset>
+
+      <fieldset>
+        <label class='exp'> How much experience do you have in the industry?
+          <select id='dropdown'>
+            <option value=''> none</option>
+            <option value=''> 1-3 months</option>
+            <option value=''>3-12 months</option>
+            <option value=''>1-3 years</option>
+            <option value=''>>3 years</option>
+          </select>
+
+        </label>
+
+        <label> What type of work do you have experience in?</label>
+         <label> <input type='checkbox' value='1' class='block'> Cashier</label>
+        <label>  <input type='checkbox' value='2' class='block'> Chef</label>
+        <label>  <input type='checkbox' value='3'> Assistant Chef</label>
+        <label>  <input type='checkbox' value='4'> Supplier</label>
+        <label>  <input type='checkbox' value='5'> Waiter / Waitress</label>
+        <label>  <input type='checkbox' value='6'> Manager</label>
+        <label>  <input type='checkbox' value='7'> Assistant Manager</label>
+        <label>  <input type='checkbox' value='8'> Dishwasher</label>
+        </fieldset>
+        <fieldset>
+          <label> Provide other qualifications you may have:
+            <textarea id='bio' rows='6' cols='30' placeholder='I can make amazing dessert...'></textarea>
+          </fieldset>
+          <input id='submit' type="submit" value='Submit'>
+          </form>
+          </main>
+    </body>
+    </html>
